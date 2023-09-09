@@ -38,10 +38,10 @@ CREATE TABLE Comentários (
 INSERT INTO Comentários (ComentarioID, ArtigoID, Autor, Texto, DataComentario)
 VALUES
     (1, 1, 'Rivaldo', 'Que Jogo RIDICULO!!!!!!', '2023-09-02'),
-    (2, 2, 'alisson', 'Rinha de Veiontário 2...', '2023-09-07'),
-    (3, 2, 'Autor 3', 'Texto do comentário 3...', '2023-09-08'),
-    (4, 3, 'Autor 4', 'Texto do comentário 4...', '2023-09-09'),
-    (5, 4, 'Autor 5', 'Texto do comentário 5...', '2023-09-10');
+    (2, 2, 'alisson', 'Rinha de Idoso', '2023-09-07'),
+    (3, 2, 'popo', 'Todo Duro Lutou Como Nunca E Perdeeu Como Sempre!', '2023-09-08'),
+    (4, 3, 'Aryton', 'No Meu Tempo.....', '1992-09-09'),
+    (5, 4, 'Zonia', 'Amazonia', '2023-09-10');
     
 -- trazendo os dados da tabela.
    SELECT * FROM BDatividadeII.Comentários
