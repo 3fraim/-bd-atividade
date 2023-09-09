@@ -1,10 +1,11 @@
--- Criar a tabela "Departamentos"
+
+-- Criando a tabela Departamentos.
 CREATE TABLE Departamentos (
     DepartamentoID INT PRIMARY KEY,
     NomeDepartamento VARCHAR(255)
 );
 
--- Inserir 5 registros na tabela "Departamentos"
+-- Inserindo os registros na tabela Departamentos.
 INSERT INTO Departamentos (DepartamentoID, NomeDepartamento)
 VALUES
     (1, 'Departamento de Vendas'),
@@ -13,7 +14,7 @@ VALUES
     (4, 'Departamento de Finanças'),
     (5, 'Departamento de TI');
 
--- Criar a tabela "Funcionários" com a chave estrangeira
+-- Criando a tabela Funcionários com a chave estrangeira.
 CREATE TABLE Funcionários (
     FuncionarioID INT PRIMARY KEY,
     Nome VARCHAR(255),
@@ -23,7 +24,7 @@ CREATE TABLE Funcionários (
     FOREIGN KEY (DepartamentoID) REFERENCES Departamentos(DepartamentoID)
 );
 
--- Inserir 5 registros na tabela "Funcionários"
+-- Inserindo os registros na tabela Funcionários.
 INSERT INTO Funcionários (FuncionarioID, Nome, Cargo, Salario, DepartamentoID)
 VALUES
     (1, 'Funcionário 1', 'Vendedor', 4500.00, 1),
